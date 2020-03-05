@@ -14,8 +14,9 @@ if (isset($_COOKIE["username"])) {
   if ($conn->query($sql))
   {
     $sql = "insert into PATIENT value ('$_POST[id]','$_POST[priority_level]','$_POST[reason])";
-    $conn->query($sql)
-    echo "<h3> Patient Added! </h3>";
+    if ($conn->query($sql)) {
+      echo "<h3> Patient Added! </h3>";
+    }
   } else {
     $err = $conn->errno;
     if($err == 1062)
