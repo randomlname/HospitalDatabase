@@ -1,5 +1,4 @@
 <?php
-
 setcookie("username",'',1);
 setcookie("password",'',1);
 
