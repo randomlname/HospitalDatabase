@@ -10,7 +10,7 @@ if (isset($_COOKIE["username"])) {
     exit;
   }
 
-  $name = "select id from SECTION where name='$_POST[name]'";
+  $name = "select name from SECTION where name='$_POST[name]'";
   $result = $conn->query($name);
   if($result->num_rows != 0) {
     $sql = "delete from SECTION where name='$_POST[name]'";
