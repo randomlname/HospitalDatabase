@@ -7,6 +7,7 @@
       <li><a href= "delete_Staff.php"> Delete a staff member</a></li>
       <p style="color:red;"> Patient adjustments </p>
       <li><a href= "insert_patient.php"> Add a patient</a></li>
+      <li><a href= "delete_Patient.php"> Delete a patient</a></li>
       <p style="color:brown;"> Room and Section adjustments </p>
       <li><a href= "insert_Section.php"> Add a section</a></li>
       <li><a href= "delete_Section.php"> delete a section</a></li>
