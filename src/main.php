@@ -1,4 +1,5 @@
 <html>
+<div class="wrapper">
 <h1 style="color:orange;"> Hospital Database </h1>
   <p> Selcet a task to do <p>
     <ul>
@@ -12,4 +13,5 @@
       <li><a href= "delete_Section.php"> delete a section</a></li>
       <li><a href= "insert_Room.php"> Add a room to a section</a></li>
     </ul>
+  </div>
 </html>
