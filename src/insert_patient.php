@@ -2,7 +2,7 @@
 <head><title> Hospital Database ** Add New Patient </title></head>
   <body>
     <h2> Add a new Patient </h2>
-    <from action="insertpatient.php" method=post>
+    <form action="insertpatient.php" method=post>
       Patient Id: <input type=text name="id" size=6><br><br>
       Patient Name: <input type=text name="name" size=20><br><br>
       Patient Address: <input type=text name="address" size=20><br><br>
