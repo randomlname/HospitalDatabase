@@ -15,6 +15,7 @@
       $result = $conn->query($sql);
       if ($result->num_rows != 0)
       {
+        echo "Patient id: <select id=\"id\">";
         while($val = $result->fetch_assoc())
         {
           echo "<option value='$val[id]'>$val[id]</option>";
