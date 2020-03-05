@@ -13,7 +13,7 @@ if (isset($COOKIE["username"])) {
   $sql = "insert into PERSON values ('$_POST[id]','$_POST[name]','$_POST[address]','$_POST[dob]')";
   if ($conn -> query($sql))
   {
-    $sql = "insert into PATIENT values ('$_POST[id]','$_POST[priority_level]','$_POST[reason])";
+    $sql = "insert into PATIENT value ('$_POST[id]','$_POST[priority_level]','$_POST[reason])";
     $conn -> query($sql)
     echo "<h3> Patient Added! </h3>";
   } else {

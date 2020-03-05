@@ -10,7 +10,7 @@ if (isset($COOKIE["username"])) {
     exit;
   }
 
-  $sql = "insert into PERSON values ('$_POST[id]','$_POST[name]',' $_POST[address]','$_POST[dob]')";
+  $sql = "insert into PERSON value ('$_POST[id]','$_POST[name]',' $_POST[address]','$_POST[dob]')";
   if ($conn -> query($sql))
   {
     $conn -> query($sql)
