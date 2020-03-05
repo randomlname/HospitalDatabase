@@ -16,6 +16,9 @@ if (isset($_COOKIE["username"])) {
     $sql = "insert into PATIENT values ('$_POST[id]','$_POST[room_number]','$_POST[priority_level]','$_POST[reason])";
     if ($conn->query($sql)) {
       echo "<h3> Patient Added! </h3>";
+    } else {
+      $err = $conn->errno;
+      echo "<p> MySQL error code $err </p>";
     }
   } else {
     $err = $conn->errno;
