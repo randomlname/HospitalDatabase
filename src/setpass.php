@@ -2,7 +2,7 @@
 $con = new mysqli("vconroy.cs.uleth.ca",$_POST["username"],$_POST["password"]);
 if($con->connect_errno) {
   echo "$con->connect_errno";
-  echo "<h3>Invalid Username or Password!</h3><p><a href =\"login.php\"> Try Again </a></p>";
+  echo "<h3>Invalid Username or Password!</h3><p><a href =\"index.php\"> Try Again </a></p>";
   exit;
 }
 
