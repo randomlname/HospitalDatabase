@@ -1,5 +1,5 @@
 <html>
-<h1> Hospital Database <h1>
+<h1 style="color:orange;"> Hospital Database </h1>
   <p> Selcet a task to do <p>
     <ul>
       <p> Staff adjustments </p>
