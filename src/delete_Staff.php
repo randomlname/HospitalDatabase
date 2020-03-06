@@ -7,7 +7,7 @@
       <input type=submit name="Submit" value="Insert">
     </form>
 
-    <p style="color:red;"> Avaliable staff Id's </p>
+    <p style="color:green;"> Avaliable staff Id's </p>
     <?php
     if(isset($_COOKIE["username"]))
     {
@@ -24,7 +24,12 @@
       {
         while($val = $result->fetch_assoc())
         {
-          echo "<option value='$val[id]'>$val[id]</option> <option value='$val[duty]'>$val[duty]</option>";
+          echo "<p style="color:green;">*********************</p>"
+          echo "<option value='$val[id]'>$val[id]</option>";
+          echo "<option value='$val[duty]'>$val[duty]</option>";
+          echo "<option value='$val[wage]'>$val[wage]</option>";
+          echo "<option value='$val[hours]'>$val[hours]</option>";
+          echo "<p style="color:green;">*********************</p>"
         }
       } else {
         echo "<p> No data to display </p>";
