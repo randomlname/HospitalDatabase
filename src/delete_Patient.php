@@ -2,10 +2,10 @@
 <head><title> Hospital Database ** Delete a patient </title></head>
   <body>
     <form action="deleteStaff.php" method=post>
-      Staff Id: <input type=text name="id" size=6><br><br>
+      Patient Id: <input type=text name="id" size=6><br><br>
       <input type=submit name="Submit" value="Insert">
     </form>
-    
+
     <?php
     if(isset($_COOKIE["username"]))
     {
@@ -24,7 +24,6 @@
         {
           echo "<option value='$val[id]'>$val[id]</option>";
         }
-        echo "<input type=submit name=\"submit\" value=\"Delete\">";
       } else {
         echo "<p> No data to display </p>";
       }
