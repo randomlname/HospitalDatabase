@@ -9,10 +9,15 @@ if (isset($_COOKIE["username"])) {
     echo "Connection Issue";
     exit;
   }
-  $sql = "delete from PATIENT where id='$_POST[id]'";
+
+  $name = "select id from PATIENT where id='$_POST[id]'";
+  $result = $conn->query($name);
+  if($result->num_rows != 0) {
+    $sql = "delete from PATIENT where id='$_POST[id]'";
     if($conn->query($sql)) {
-      $sql = "delete from PERSON where id='$_POST[id]'";
       echo "<h3> patient deleted!</h3>";
+      $sql = "delete from PERSON where id='$_POST[id]'";
+      $conn->query($sql);
     } else {
       $err = $conn->errno;
       if ($err == 1451) {

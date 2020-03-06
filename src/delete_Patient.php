@@ -15,12 +15,10 @@
       $result = $conn->query($sql);
       if ($result->num_rows != 0)
       {
-        echo "Patient id: <select id=\"id\">";
         while($val = $result->fetch_assoc())
         {
           echo "<option value='$val[id]'>$val[id]</option>";
         }
-        echo "</select>";
         echo "<input type=submit name=\"submit\" value=\"Delete\">";
       } else {
         echo "<p> No data to display </p>";
@@ -29,6 +27,9 @@
     } else {
       echo "<h3> You are not logged in! </h3><p> <a href=\"index.php\">Login First</a></p>";
     }
+
+    Staff Id: <input type=text name="id" size=6><br><br>
+    <input type=submit name="Submit" value="Insert">
      ?>
    </body>
 </html>
