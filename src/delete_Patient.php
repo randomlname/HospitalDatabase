@@ -22,9 +22,7 @@
       {
         while($val = $result->fetch_assoc())
         {
-          echo "<p style="color:red;">*********************</p>"
           echo "<option value='$val[id]'>$val[id]</option>";
-          echo "<p style="color:red;">*********************</p>"
         }
       } else {
         echo "<p> No data to display </p>";
