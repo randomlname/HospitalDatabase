@@ -1,7 +1,7 @@
 <html>
 <head><title> Hospital Database ** Delete a patient </title></head>
   <body>
-    <form action="deleteStaff.php" method=post>
+    <form action="deletePatient.php" method=post>
       Patient Id: <input type=text name="id" size=6><br><br>
       <input type=submit name="Submit" value="Insert">
     </form>
