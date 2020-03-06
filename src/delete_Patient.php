@@ -1,6 +1,11 @@
 <html>
 <head><title> Hospital Database ** Delete a patient </title></head>
   <body>
+    <form action="deleteStaff.php" method=post>
+      Staff Id: <input type=text name="id" size=6><br><br>
+      <input type=submit name="Submit" value="Insert">
+    </form>
+    
     <?php
     if(isset($_COOKIE["username"]))
     {
@@ -27,9 +32,6 @@
     } else {
       echo "<h3> You are not logged in! </h3><p> <a href=\"index.php\">Login First</a></p>";
     }
-
-    Staff Id: <input type=text name="id" size=6><br><br>
-    <input type=submit name="Submit" value="Insert">
      ?>
    </body>
 </html>
