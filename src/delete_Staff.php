@@ -25,7 +25,9 @@
         while($val = $result->fetch_assoc())
         {
           $aql = "select name from PERSON where id=$val[id]";
-          echo "<option value='$aql[name]'>$aql[name]</option>";
+          $result2 = $conn->query($aql);
+          $val2 = $result2->fectch_assoc();
+          echo "<option value='$val2[name]'>$val2[name]</option>";
           echo "<option value='$val[id]'>$val[id]</option>";
           echo "<option value='$val[duty]'>$val[duty]</option>";
           echo "<option value='$val[wage]'>$val[wage]</option>";
