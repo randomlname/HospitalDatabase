@@ -25,7 +25,7 @@
       {
         while($val = $result->fetch_assoc())
         {
-          echo "<option value='$aql[name]'>$aql[name]</option>";
+          echo "<option value='$aql'>$aql</option>";
           echo "<option value='$val[id]'>$val[id]</option>";
           echo "<option value='$val[duty]'>$val[duty]</option>";
           echo "<option value='$val[wage]'>$val[wage]</option>";
