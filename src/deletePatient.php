@@ -10,9 +10,8 @@ if (isset($_COOKIE["username"])) {
     exit;
   }
 
-  $name = "select id from PATIENT where id='$_POST[id]'";
-  $result = $conn->query($name);
-  if($result->num_rows != 0) {
+  $sql = "select id from PATIENT where id='$_POST[id]'";
+  if($sql->num_rows != 0) {
     $sql = "delete from PATIENT where id='$_POST[id]'";
     if($conn->query($sql)) {
       echo "<h3> patient deleted!</h3>";
