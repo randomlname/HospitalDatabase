@@ -5,7 +5,7 @@
       Patient Id: <input type=text name="id" size=6><br><br>
       <input type=submit name="Submit" value="Insert">
     </form>
-
+    <p style="color:red;"> Avaliable patient Id's </p>
     <?php
     if(isset($_COOKIE["username"]))
     {
