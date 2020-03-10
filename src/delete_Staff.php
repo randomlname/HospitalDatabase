@@ -24,11 +24,11 @@
       {
         while($val = $result->fetch_assoc())
         {
-          echo "<option value='$val[name]'>$val[name]</option>";
-          echo "<option value='$val[id]'>$val[id]</option>";
-          echo "<option value='$val[duty]'>$val[duty]</option>";
-          echo "<option value='$val[wage]'>$val[wage]</option>";
-          echo "<option value='$val[hours]'>$val[hours]</option>";
+          echo "<p> staff name:<option value='$val[name]'>$val[name]</option></p>";
+          echo "<p> staff id:<option value='$val[id]'>$val[id]</option></p>";
+          echo "<p> staff duty:<option value='$val[duty]'>$val[duty]</option></p>";
+          echo "<p> staff pay/hour:<option value='$val[wage]'>$val[wage]</option></p>";
+          echo "<p> staff hours:<option value='$val[hours]'>$val[hours]</option></p>";
         }
       } else {
         echo "<p> No data to display </p>";
