@@ -4,6 +4,7 @@
     <ul>
       <p style="color:green;"> Staff adjustments </p>
       <li><a href= "insert_Staff.php"> Add a staff member</a></li>
+      <li><a href= "update_Staff.php"> Update a staff member</a></li>
       <li><a href= "delete_Staff.php"> Delete a staff member</a></li>
       <p style="color:red;"> Patient adjustments </p>
       <li><a href= "insert_patient.php"> Add a patient</a></li>
