@@ -5,18 +5,18 @@
     <?php
     if(isset($_COOKIE["username"])) {
 
-      echo "<form action=\"updateStaff.php\" method=post>";
+      echo "<form action=\"updatePatient.php\" method=post>";
 
       $username = $_COOKIE["username"];
       $password = $_COOKIE["password"];
 
       $conn = new mysqli("vconroy.cs.uleth.ca", $username, $password,'group11');
 
-      $sql = "select id from STAFF";
+      $sql = "select id from PATIENT";
       $result = $conn->query($sql);
       if($result->num_rows != 0)
       {
-        echo "Staff ID: <select name=\"id\">";
+        echo "PATIENT ID: <select name=\"id\">";
 
         while ($val = $result->fetch_assoc()) {
           echo "<option value='$val[id]'>$val[id]</option>";

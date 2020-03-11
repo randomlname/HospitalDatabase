@@ -10,7 +10,7 @@ if (isset($_COOKIE["username"])) {
     exit;
   }
 
-  $sql = "insert into ROOM values ('$_POST[room_number]','$_POST[number_patients]','$_POST[booked]','$_POST[section]')";
+  $sql = "insert into ROOM values ('$_POST[room_number]','$_POST[number_patients]','$_POST[booked]','$_POST[section_name]')";
   if ($conn->query($sql))
   {
     echo "<h3> Room Added! </h3>";
