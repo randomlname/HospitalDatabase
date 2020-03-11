@@ -4,16 +4,16 @@ $username = $_COOKIE["username"];
 $password = $_COOKIE["password"];
 
 $conn = new mysqli("vconroy.cs.uleth.ca",$username,$password,'group11');
-$sql = "update STAFF set id='$_POST[id]',duty='$_POST[duty]',wage='$_POST[wage]',hours='$_POST[hours]' where id='$_POST[id]'";
+$sql = "update PATIENT set id='$_POST[id]',room_number='$_POST[room_number]',priority_level='$_POST[priority_level]',reason='$_POST[reason]' where id='$_POST[id]'";
 if($conn->query($sql))
 {
-	echo "<h3> Staff updated!</h3>";
+	echo "<h3> Patient updated!</h3>";
 
 } else {
    $err = $conn->errno();
    if($err == 1062)
    {
-      echo "<p>Staff ID: $_POST[id] already exists!</p>";
+      echo "<p>Patient ID: $_POST[id] already exists!</p>";
    } else {
       echo "error code $err";
    }
