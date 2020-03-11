@@ -18,13 +18,14 @@
 
       $conn = new mysqli("vconroy.cs.uleth.ca",$username,$password,'group11');
 
-      $sql = "select * from STAFF";
+      $sql = "select * from STAFF S, PERSON P where S.id = P.id";
 
       $result = $conn->query($sql);
       if ($result->num_rows != 0)
       {
         while($val = $result->fetch_assoc())
         {
+          echo "<p> Staff name:<option value='$val[name]'>$val[name]</option></p>";
           echo "<p> staff id:<option value='$val[id]'>$val[id]</option></p>";
           echo "<p> staff duty:<option value='$val[duty]'>$val[duty]</option></p>";
           echo "<p> staff pay/hour:<option value='$val[wage]'>$val[wage]</option></p>";
