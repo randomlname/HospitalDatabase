@@ -16,13 +16,14 @@
 
       $conn = new mysqli("vconroy.cs.uleth.ca",$username,$password,'group11');
 
-      $sql = "select * from PATIENT";
+      $sql = "select * from PATIENT P, PERSON PR where P.id = PR.id";
       $result = $conn->query($sql);
       if ($result->num_rows != 0)
       {
         while($val = $result->fetch_assoc())
         {
           echo "<option value='$val[id]'>$val[id]</option>";
+          echo "<option value='$val[name]'>$val[name]</option>";
         }
       } else {
         echo "<p> No data to display </p>";
