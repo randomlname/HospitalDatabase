@@ -7,7 +7,7 @@
       <input type=submit name="Submit" value="Insert">
     </form>
 
-    <p style="color:green;"> Avaliable staff Id's </p>
+    <p> style="color:green;"> Staff member List </p>
     <?php
     if(isset($_COOKIE["username"]))
     {
