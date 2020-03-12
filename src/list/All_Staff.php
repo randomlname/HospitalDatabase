@@ -5,7 +5,7 @@
 
     <p style="color:green;"> Staff member List </p>
     <?php
-    echo "<a href=\"../main.php\">Return</a> to Home Page.";
+    echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
     if(isset($_COOKIE["username"]))
     {
       echo "<form action=\"deleteStaff.php\" method=post>";
@@ -27,6 +27,7 @@
           echo "<p><strong> staff duty:</strong><option value='$val[duty]'>$val[duty]</option></p>";
           echo "<p><strong> staff pay/hour:</strong><option value='$val[wage]'>$val[wage]</option></p>";
           echo "<p><strong> staff hours:</strong><option value='$val[hours]'>$val[hours]</option></p>";
+          echo "<p><strong>____________________________________________________</strong></p>";
         }
       } else {
         echo "<p> No data to display </p>";
