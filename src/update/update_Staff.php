@@ -1,7 +1,7 @@
 <html>
 <head><title> Hospital Database ** Update a staff </title></head>
   <body>
-
+    <h2> Update staff member records </h2>
     <?php
     if(isset($_COOKIE["username"])) {
 

@@ -1,13 +1,7 @@
 <html>
 <head><title> Hospital Database ** Delete a staff member</title></head>
   <body>
-    <h2> Delete a staff member </h2>
-    <form action="deleteStaff.php" method=post>
-      Staff Id: <input type=text name="id" size=6><br><br>
-      <input type=submit name="Submit" value="Insert">
-    </form>
-
-    <p style="color:green;"> Staff member List </p>
+    <h2> Delete a staff member records </h2>
     <?php
     if(isset($_COOKIE["username"]))
     {
@@ -26,12 +20,10 @@
         echo "Staff id: <select name=\"id\">";
         while($val = $result->fetch_assoc())
         {
-          echo "<p> Staff name:<option value='$val[name]'>$val[name]</option></p>";
           echo "<p> staff id:<option value='$val[id]'>$val[id]</option></p>";
-          echo "<p> staff duty:<option value='$val[duty]'>$val[duty]</option></p>";
-          echo "<p> staff pay/hour:<option value='$val[wage]'>$val[wage]</option></p>";
-          echo "<p> staff hours:<option value='$val[hours]'>$val[hours]</option></p>";
         }
+        echo "</select>";
+        echo "<input type=submit name=\"submit\" value=\"Delete\">";
       } else {
         echo "<p> No data to display </p>";
       }
