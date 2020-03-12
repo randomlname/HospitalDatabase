@@ -23,6 +23,8 @@
       $result = $conn->query($sql);
       if ($result->num_rows != 0)
       {
+        echo "Staff id: <select name=\"id\">";
+        /*
         while($val = $result->fetch_assoc())
         {
           echo "<p> Staff name:<option value='$val[name]'>$val[name]</option></p>";
@@ -31,6 +33,7 @@
           echo "<p> staff pay/hour:<option value='$val[wage]'>$val[wage]</option></p>";
           echo "<p> staff hours:<option value='$val[hours]'>$val[hours]</option></p>";
         }
+        */
       } else {
         echo "<p> No data to display </p>";
       }
