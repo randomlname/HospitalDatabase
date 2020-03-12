@@ -21,7 +21,7 @@
       {
         while($val = $result->fetch_assoc())
         {
-          echo "<p> Staff name:<option value='$val[name]'>$val[name]</option></p>";
+          echo "<p><option Staff name: value='$val[name]'>$val[name]</option></p>";
           echo "<p> staff id:<option value='$val[id]'>$val[id]</option></p>";
           echo "<p> staff duty:<option value='$val[duty]'>$val[duty]</option></p>";
           echo "<p> staff pay/hour:<option value='$val[wage]'>$val[wage]</option></p>";
@@ -31,6 +31,7 @@
         echo "<p> No data to display </p>";
       }
       echo "</form>";
+      echo "<a href=\"../main.php\">Return</a> to Home Page.";
     } else {
       echo "<h3> You are not logged in! </h3><p> <a href=\"../index.php\">Login First</a></p>";
     }
