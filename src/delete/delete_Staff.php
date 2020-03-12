@@ -36,7 +36,7 @@
       }
       echo "</form>";
     } else {
-      echo "<h3> You are not logged in! </h3><p> <a href=\"index.php\">Login First</a></p>";
+      echo "<h3> You are not logged in! </h3><p> <a href=\"../index.php\">Login First</a></p>";
     }
      ?>
    </body>

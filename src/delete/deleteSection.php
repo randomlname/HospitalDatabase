@@ -28,8 +28,8 @@ if (isset($_COOKIE["username"])) {
     echo "<p> section dose not exist </p>";
   }
 
-  echo "<a href=\"main.php\"Return</a> to Home Page.";
+  echo "<a href=\"../main.php\"Return</a> to Home Page.";
 } else {
-  echo "<h3> you are not logged in! </h3> <a href=\"index.php\">Login first</a></p>";
+  echo "<h3> you are not logged in! </h3> <a href=\"../index.php\">Login first</a></p>";
 }
 ?>

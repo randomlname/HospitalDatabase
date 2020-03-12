@@ -10,14 +10,12 @@ if (isset($_COOKIE["username"])) {
     exit;
   }
 
-  $name = "select id from STAFF where id='$_POST[id]'";
+  $name = "select room_number from ROOM where room_number='$_POST[room_number]'";
   $result = $conn->query($name);
   if($result->num_rows != 0) {
-    $sql = "delete from STAFF where id='$_POST[id]'";
+    $sql = "delete from ROOM where room_number='$_POST[room_number]'";
     if($conn->query($sql)) {
-      echo "<h3> Staff member deleted!</h3>";
-      $sql = "delete from PERSON where id='$_POST[id]'";
-      $conn->query($sql);
+      echo "<h3> Room deleted!</h3>";
     } else {
       $err = $conn->errno;
       if ($err == 1451) {
@@ -27,11 +25,11 @@ if (isset($_COOKIE["username"])) {
       }
     }
   } else {
-    echo "<p> staff dose not exist </p>";
+    echo "<p> room dose not exist </p>";
   }
 
-  echo "<a href=\"main.php\"Return</a> to Home Page.";
+  echo "<a href=\"../main.php\"Return</a> to Home Page.";
 } else {
-  echo "<h3> you are not logged in! </h3> <a href=\"index.php\">Login first</a></p>";
+  echo "<h3> you are not logged in! </h3> <a href=\"../index.php\">Login first</a></p>";
 }
 ?>
