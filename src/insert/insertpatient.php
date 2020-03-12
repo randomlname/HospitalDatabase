@@ -16,7 +16,7 @@ if (isset($_COOKIE["username"])) {
     $sql = "insert into PATIENT values ('$_POST[id]','$_POST[room_number]','$_POST[priority_level]','$_POST[reason]')";
     if ($conn->query($sql)) {
       echo "<h3> Patient Added! </h3>";
-    } 
+    }
   } else {
     $err = $conn->errno;
     if($err == 1062)
@@ -27,9 +27,9 @@ if (isset($_COOKIE["username"])) {
     }
   }
 
-  echo "<a href=\"main.php\">Return</a> to Home Page.";
+  echo "<a href=\"src/main.php\">Return</a> to Home Page.";
 
 } else {
-  echo "<h3> You are not logged in! </h3><p> <a href=\"index.php\">Login First</a></p>";
+  echo "<h3> You are not logged in! </h3><p> <a href=\"src/index.php\">Login First</a></p>";
 }
 ?>
