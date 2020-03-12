@@ -27,9 +27,9 @@ if (isset($_COOKIE["username"])) {
     }
   }
 
-  echo "<a href=\"src/main.php\">Return</a> to Home Page.";
+  echo "<a href=\"../src/main.php\">Return</a> to Home Page.";
 
 } else {
-  echo "<h3> You are not logged in! </h3><p> <a href=\"src/index.php\">Login First</a></p>";
+  echo "<h3> You are not logged in! </h3><p> <a href=\"../src/index.php\">Login First</a></p>";
 }
 ?>
