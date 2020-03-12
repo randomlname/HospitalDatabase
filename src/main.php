@@ -18,7 +18,7 @@
               <h3> Staff adjustments </h3>
               <ul>
                 <li><a href= "insert/insert_Staff.php"> Add a staff member</a></li>
-                <li><a href= "update_Staff.php"> Update records for a staff member</a></li>
+                <li><a href= "update/update_Staff.php"> Update records for a staff member</a></li>
                 <li><a href= "delete/delete_Staff.php"> Delete a staff member</a></li>
               </ul>
             </div>
@@ -26,7 +26,7 @@
               <h3> Patient adjustments </h3>
               <ul>
                 <li><a href= "insert/insert_patient.php"> Add a patient</a></li>
-                <li><a href= "update_Patient.php"> Update records for a patient</a></li>
+                <li><a href= "update/update_Patient.php"> Update records for a patient</a></li>
                 <li><a href= "delete/delete_Patient.php"> Delete a patient</a></li>
               </ul>
             </div>

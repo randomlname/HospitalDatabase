@@ -6,7 +6,7 @@
 <?php
 if(isset($_COOKIE["username"])){
 
-echo "<form action=\"updateStaff2.php\" method=post>";
+echo "<form action=\"updatePatient2.php\" method=post>";
 
 	$username = $_COOKIE["username"];
 	$password = $_COOKIE["password"];
@@ -18,7 +18,7 @@ echo "<form action=\"updateStaff2.php\" method=post>";
 	   exit;
 	}
 
-	$sql = "select * from STAFF where id='$_POST[id]'";
+	$sql = "select * from PATIENT where id='$_POST[id]'";
 
 	$result = $conn->query($sql);
 	if(!$result)
@@ -30,9 +30,9 @@ echo "<form action=\"updateStaff2.php\" method=post>";
 	if($result->num_rows != 0)
 	{
 	   $rec=$result->fetch_assoc();
-	   echo "Duty: <input type=text name=\"duty\" value=\"$rec[duty]\"><br><br>";
-	   echo "Wage: <input type=float name=\"wage\" value=\"$rec[wage]\"><br><br>";
-	   echo "Hours: <input type=float name=\"hours\" value=\"$rec[hours]\"><br><br>";
+	   echo "Room Number: <input type=text name=\"room_number\" value=\"$rec[room_number]\"><br><br>";
+	   echo "Priority Level: <input type=int name=\"priority_level\" value=\"$rec[priority_level]\"><br><br>";
+	   echo "Reason: <input type=text name=\"reason\" value=\"$rec[reason]\"><br><br>";
 	   echo "<input type=hidden name=\"id\" value=\"$_POST[id]\">";
 	   echo "<input type=submit name=\"submit\" value=\"Update\">";
 
@@ -46,7 +46,7 @@ echo "<form action=\"updateStaff2.php\" method=post>";
 
 	echo "</form>";
 } else {
-   echo "<h3>You are not logged in!</h3><p> <a href=\"index.php\">Login First</a></p>";
+   echo "<h3>You are not logged in!</h3><p> <a href=\"../index.php\">Login First</a></p>";
 
 }
 ?>
