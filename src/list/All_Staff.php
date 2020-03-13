@@ -2,7 +2,6 @@
 <head><title> Hospital Database ** All staff member</title></head>
   <body>
     <h2> Display all staff members </h2>
-
     <p style="color:green;"> Staff member List </p>
     <?php
     echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
@@ -33,12 +32,10 @@
         echo "<p> No data to display </p>";
       }
       echo "</form>";
-      echo "<a href=\"../main.php\">Return</a> to Home Page.";
+      echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
     } else {
       echo "<h3> You are not logged in! </h3><p> <a href=\"../index.php\">Login First</a></p>";
     }
      ?>
-   </body>
-</html>
    </body>
 </html>
