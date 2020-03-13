@@ -7,8 +7,6 @@
     echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
     if(isset($_COOKIE["username"]))
     {
-      echo "<form action=\"deleteStaff.php\" method=post>";
-
       $username = $_COOKIE["username"];
       $password = $_COOKIE["password"];
 
@@ -31,7 +29,6 @@
       } else {
         echo "<p> No data to display </p>";
       }
-      echo "</form>";
       echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
     } else {
       echo "<h3> You are not logged in! </h3><p> <a href=\"../index.php\">Login First</a></p>";

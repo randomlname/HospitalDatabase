@@ -23,6 +23,7 @@
           echo "<p><strong> Patient room_number:</strong><option value='$val[room_number]'>$val[room_number]</option></P>";
           echo "<p><strong> Patient priority_level:</strong><option value='$val[priority_level]'>$val[priority_level]</option></P>";
           echo "<p><strong> Patient reason:</strong><option value='$val[reason]'>$val[reason]</option></P>";
+          echo "<p><strong>____________________________________________________</strong></p>";
         }
       } else {
         echo "<p> No data to display </p>";
