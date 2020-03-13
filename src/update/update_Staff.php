@@ -31,6 +31,7 @@
       }
 
       echo "</form>";
+      echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
 
     }
     else {

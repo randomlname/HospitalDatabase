@@ -39,12 +39,11 @@ echo "<form action=\"updatePatient2.php\" method=post>";
 	}
 	else
 	{
-		echo "<p>Umm...you may want to enter some data. ;) </p>";
-    echo "<p>We get here? </p>";
-
+		echo "<p>No data to Display. ;) </p>";
 	}
 
 	echo "</form>";
+	echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
 } else {
    echo "<h3>You are not logged in!</h3><p> <a href=\"../index.php\">Login First</a></p>";
 
