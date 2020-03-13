@@ -1,5 +1,5 @@
 <html>
-<head><title> Hospital Database ** All staff member</title></head>
+<head><title> Hospital Database ** All Staff member</title></head>
   <body>
     <h2> Display all staff members </h2>
     <p style="color:green;"> Staff member List </p>
