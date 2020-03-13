@@ -1,7 +1,7 @@
 <html>
 <head><title> Hospital Database ** Delete a staff member</title></head>
   <body>
-    <h2> Delete a staff member records </h2>
+    <h2> Delete a staff member record </h2>
     <?php
     if(isset($_COOKIE["username"]))
     {
@@ -32,7 +32,5 @@
       echo "<h3> You are not logged in! </h3><p> <a href=\"../index.php\">Login First</a></p>";
     }
      ?>
-   </body>
-</html>
    </body>
 </html>

@@ -20,7 +20,7 @@
                 <li><a href= "insert/insert_Staff.php"> Add a staff member</a></li>
                 <li><a href= "update/update_Staff.php"> Update records for a staff member</a></li>
                 <li><a href= "delete/delete_Staff.php"> Delete a staff member</a></li>
-                <li><a href= "list/All_Staff.php"> Show all staff members</a></li>
+                <li><a href= "list/All_Staff.php"> Show all staff records</a></li>
               </ul>
             </div>
             <div class="col-sm-4">
@@ -29,6 +29,7 @@
                 <li><a href= "insert/insert_patient.php"> Add a patient</a></li>
                 <li><a href= "update/update_Patient.php"> Update records for a patient</a></li>
                 <li><a href= "delete/delete_Patient.php"> Delete a patient</a></li>
+                <li><a href= "list/All_Patient.php"> Show all patient records</a></li>
               </ul>
             </div>
             <div class="col-sm-4">

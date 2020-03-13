@@ -1,11 +1,7 @@
 <html>
 <head><title> Hospital Database ** Delete a patient </title></head>
   <body>
-    <form action="deletePatient.php" method=post>
-      Patient Id: <input type=text name="id" size=6><br><br>
-      <input type=submit name="Submit" value="Insert">
-    </form>
-    <p style="color:red;"> Avaliable patient Id's </p>
+    <h2> Delete a patient record </h2>
     <?php
     if(isset($_COOKIE["username"]))
     {
@@ -20,11 +16,13 @@
       $result = $conn->query($sql);
       if ($result->num_rows != 0)
       {
+        echo "Patient id: <select name=\"id\">";
         while($val = $result->fetch_assoc())
         {
           echo "<option value='$val[id]'>$val[id]</option>";
-          echo "<option value='$val[name]'>$val[name]</option>";
         }
+        echo "</select>";
+        echo "<input type=submit name=\"submit\" value=\"Delete\">";
       } else {
         echo "<p> No data to display </p>";
       }
