@@ -18,6 +18,7 @@
       {
         while($val = $result->fetch_assoc())
         {
+          echo "<p><strong>____________________________________________________</strong></p>";
           echo "<p><strong> Patient id:</strong><option value='$val[id]'>$val[id]</option></P>";
           echo "<p><strong> Patient name:</strong><option value='$val[name]'>$val[name]</option></p>";
           echo "<p><strong> Patient room number:</strong><option value='$val[room_number]'>$val[room_number]</option></P>";

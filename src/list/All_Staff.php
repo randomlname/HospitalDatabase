@@ -19,6 +19,7 @@
       {
         while($val = $result->fetch_assoc())
         {
+          echo "<p><strong>____________________________________________________</strong></p>";
           echo "<p><strong> Staff name:</strong><option value='$val[name]'>$val[name]</option></p>";
           echo "<p><strong> staff id:</strong><option value='$val[id]'>$val[id]</option></p>";
           echo "<p><strong> staff duty:</strong><option value='$val[duty]'>$val[duty]</option></p>";
