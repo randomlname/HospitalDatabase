@@ -4,7 +4,7 @@ $username = $_COOKIE["username"];
 $password = $_COOKIE["password"];
 
 $conn = new mysqli("vconroy.cs.uleth.ca",$username,$password,'group11');
-$sql = "update ROOM set room_number='$_POST[room_number]',number_patients='$_POST[number_patients]',booked='$_POST[booked]',section_name='$_POST[section_name]' where room_number='$_POST[room_number]'";
+$sql = "update ROOM set room_number='$_POST[room_number]',number_patients='$_POST[number_patients]',booked='$_POST[booked]' where room_number='$_POST[room_number]'";
 if($conn->query($sql))
 {
 	echo "<h3> Room updated!</h3>";
@@ -13,7 +13,7 @@ if($conn->query($sql))
    $err = $conn->errno();
    if($err == 1062)
    {
-      echo "<p>Room_number: $_POST[room_number] already exists!</p>";
+      echo "<p> Room_number: $_POST[room_number] already exists!</p>";
    } else {
       echo "error code $err";
    }
