@@ -33,7 +33,7 @@ echo "<form action=\"updateRoom2.php\" method=post>";
 	   echo "Room Number: <input type=text name=\"room_number\" value=\"$rec[room_number]\"><br><br>";
 	   echo "number of patients: <input type=text name=\"number_patients\" value=\"$rec[number_patients]\"><br><br>";
      echo "booked: <input type=text name=\"booked\" value=\"$rec[booked]\"><br><br>";
-     echo "section name: <input type=text name=\"section_name\" value=\"$rec[section_name]\"><br><br>";
+     echo "<input type=submit name=\"submit\" value=\"Update\">";
 	}
 	else
 	{
