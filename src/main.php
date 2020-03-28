@@ -36,11 +36,12 @@
               <h3> Room and Section adjustments </h3>
               <ul>
                 <li><a href= "insert/insert_Section.php"> Add a section</a></li>
-                <li><a href= "delete/delete_Section.php"> delete a section</a></li>
+                <li><a href= "delete/delete_Section.php"> Delete a section</a></li>
                 <li><a href= "insert/insert_Room.php"> Add a room to a section</a></li>
-                <li><a href= "delete/delete_Room.php"> delete a room from a section</a></li>
-                <li><a href= "update/update_room.php"> update room details</a></li>
-                </details>
+                <li><a href= "delete/delete_Room.php"> Delete a room from a section</a></li>
+                <li><a href= "update/update_room.php"> Update room details</a></li>
+                <li><a href= "list/All_Section.php"> Show all section </a></li>
+                <li><a href= "list/All_Room.php"> Show all rooms </a></li>
               </ul>
             </div>
       </div>
