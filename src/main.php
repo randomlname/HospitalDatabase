@@ -21,6 +21,7 @@
                 <li><a href= "update/update_Staff.php"> Update records for a staff member</a></li>
                 <li><a href= "delete/delete_Staff.php"> Delete a staff member</a></li>
                 <li><a href= "assign/assign_Staff.php"> Assign a Staff member to a room </a></li>
+                <li><a href= "remove/remove_Staff.php"> Remove a Staff assigned to a room </a></li>
                 <li><a href= "list/All_Staff.php"> Show all staff records</a></li>
               </ul>
             </div>
