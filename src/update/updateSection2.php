@@ -4,7 +4,7 @@ $username = $_COOKIE["username"];
 $password = $_COOKIE["password"];
 
 $conn = new mysqli("vconroy.cs.uleth.ca",$username,$password,'group11');
-$sql = "update SECTION set name='$rec[name]' where name='$_POST[name]'";
+$sql = "update SECTION set name='$GLOBALS[name]' where name='$_POST[name]'";
 if($conn->query($sql))
 {
 	echo "<h3> Section updated!</h3>";

@@ -30,7 +30,7 @@ echo "<form action=\"updateSection2.php\" method=post>";
 	if($result->num_rows != 0)
 	{
 	   $rec=$result->fetch_assoc();
-	   echo "Section name: <input type=text name=\"name\" value=\"$rec[name]\"><br><br>";
+	   echo "Section name: <input type=text name=\"name\" value=\"$GLOBALS[name]\"><br><br>";
      echo "<input type=submit name=\"submit\" value=\"Update\">";
 	}
 	else
