@@ -21,6 +21,7 @@ echo "<form action=\"updateSection2.php\" method=post>";
 	$sql = "select * from SECTION where name='$_POST[name]'";
 
 	$result = $conn->query($sql);
+
 	if(!$result)
 	{
 	   echo "Problem executing select!";
@@ -29,8 +30,10 @@ echo "<form action=\"updateSection2.php\" method=post>";
 
 	if($result->num_rows != 0)
 	{
+
 	   $rec=$result->fetch_assoc();
-	   echo "Section name: <input type=text name=\"name\" value=\"$GLOBALS[name]\"><br><br>";
+		 $_POST['A'] = $rec['name'];
+	   echo "Section name: <input type=text name=\"name\" value=\"$rec[name]\"><br><br>";
      echo "<input type=submit name=\"submit\" value=\"Update\">";
 	}
 	else
