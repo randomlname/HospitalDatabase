@@ -1,7 +1,7 @@
 <html>
 <head><title> Hospital Database ** All Staff member</title></head>
   <body>
-    <h2> Display all staff members </h2>
+    <h2> Display all staff assigned to a room  </h2>
     <p style="color:green;"> Staff member List </p>
     <?php
     echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
