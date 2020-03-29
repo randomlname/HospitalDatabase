@@ -10,14 +10,14 @@ if (isset($_COOKIE["username"])) {
     exit;
   }
 
-  $sql = "insert into ROOMNUMBERS values ('$_POST[id]','$_POST[room_list_id]')";
+  $sql = "insert into ROOMNUMBERS values ('$_POST[id]','$_POST[room_number]')";
 
   if ($conn->query($sql)) {
-    echo "<h3> Assigned staff with id: $_POST[id] to room number $_POST[room_list_id] </h3>";
+    echo "<h3> Assigned staff with id: $_POST[id] to room number $_POST[room_number] </h3>";
   } else {
     $err = $conn->errno;
     if($err == 1062) {
-      echo "<p> Staff member with id: $_POST[id] already assigend to room number $_POST[room_list_id] </p>";
+      echo "<p> Staff member with id: $_POST[id] already assigend to room number $_POST[room_number] </p>";
     } else {
       echo "<p>MySQL error code $err </p>";
     }
