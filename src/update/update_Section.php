@@ -16,7 +16,7 @@
       $result = $conn->query($sql);
       if($result->num_rows != 0)
       {
-        echo "room number : <select name=\"name\">";
+        echo "Section name: <select name=\"name\">";
 
         while ($val = $result->fetch_assoc()) {
           echo "<option value='$val[name]'>$val[name]</option>";
