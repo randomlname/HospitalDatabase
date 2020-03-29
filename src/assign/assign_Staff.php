@@ -17,22 +17,27 @@
 
       $result = $conn->query($sql);
       $result1 = $conn->query($sql1);
-      if($result->num_rows != 0 and $result1->num_rows != 0)
+      if($result->num_rows != 0)
       {
         echo "Staff ID: <select name=\"id\">";
-        echo "Room number: <select name=\"room_number\">";
 
-        while ($val = $result->fetch_assoc() and $val1 = $result1->fetch_assoc()) {
+        while ($val = $result->fetch_assoc()) {
           echo "<option value='$val[id]'>$val[id]</option>";
-          echo "<option value='$val1[room_number]'>$val1[room_number]</option>";
         }
 
         echo "</select>";
-        echo "</select>";
-        echo "<input type=submit name=\"submit\" value=\"assign\">";
 
-      }
-      else {
+        if ($result1->num_rows != 0) {
+          echo "Room number: <select name=\"room_number\">";
+
+          while ($val1 = $result1->fetch_assoc()) {
+            echo "<option value='$val1[room_number]'>$val1[room_number]</option>";
+          }
+          echo "</select>";
+          echo "<input type=submit name=\"submit\" value=\"assign\">";
+        }
+
+      } else {
         echo "<p> no matching data for query </p>";
       }
 
