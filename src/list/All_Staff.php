@@ -12,7 +12,7 @@
 
       $conn = new mysqli("vconroy.cs.uleth.ca",$username,$password,'group11');
 
-      $sql = "select * from STAFF S, PERSON P where S.id = P.id";
+      $sql = "select * from STAFF S, PERSON P, ROOMNUMBERS R where S.id = P.id";
 
       $result = $conn->query($sql);
       if ($result->num_rows != 0)
@@ -25,6 +25,7 @@
           echo "<p><strong> staff duty:</strong><option value='$val[duty]'>$val[duty]</option></p>";
           echo "<p><strong> staff pay/hour:</strong><option value='$val[wage]'>$val[wage]</option></p>";
           echo "<p><strong> staff hours:</strong><option value='$val[hours]'>$val[hours]</option></p>";
+          echo "<P><strong> staff assigned rooms:</strong><option value='$val[room_list_id]'>$val[room_list_id]</option></p>";
           echo "<p><strong>____________________________________________________</strong></p>";
         }
       } else {
