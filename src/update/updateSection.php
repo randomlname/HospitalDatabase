@@ -32,7 +32,6 @@ echo "<form action=\"updateSection2.php\" method=post>";
 	{
 
 	   $rec=$result->fetch_assoc();
-		 $_POST['A'] = $rec['name'];
 	   echo "Section name: <input type=text name=\"name\" value=\"$rec[name]\"><br><br>";
      echo "<input type=submit name=\"submit\" value=\"Update\">";
 	}
