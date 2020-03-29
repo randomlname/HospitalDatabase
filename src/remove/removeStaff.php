@@ -10,7 +10,7 @@ if (isset($_COOKIE["username"])) {
     exit;
   }
 
-  $sql = "delete from ROOMNUMBERS values ('$_POST[id]','$_POST[room_list_id]')";
+  $sql = "delete from ROOMNUMBERS where id = '$_POST[id]' and room_list_id = '$_POST[room_list_id]'";
 
   if ($conn->query($sql)) {
     echo "<h3> Removed staff with id: $_POST[id] to room number $_POST[room_list_idm_number] </h3>";
