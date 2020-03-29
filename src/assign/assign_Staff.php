@@ -28,6 +28,7 @@
         }
 
         echo "</select>";
+        echo "</select>";
         echo "<input type=submit name=\"submit\" value=\"assign\">";
 
       }
