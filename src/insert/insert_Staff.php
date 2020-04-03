@@ -4,12 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="/styles/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <div class="jumbotron text-center">
   <title> Hospital Database ** Add New staff </title>
-  </div>
 </head>
   <body>
+    <div class="jumbotron text-center">
     <h2> Add a new staff member </h2>
+    </div>
     <form action="insertStaff.php" method=post>
       Staff Id: <input type=text name="id" size=6><br><br>
       Staff Name: <input type=text name="name" size=20><br><br>
