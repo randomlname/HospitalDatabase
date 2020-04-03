@@ -12,7 +12,6 @@
       Staff hours: <input type=float name="hours"><br><br>
       <input type=submit name="Submit" value="Insert">
       <?php
-      echo "<p> -_- </p> <br>"
       echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
       ?>
     </form>
