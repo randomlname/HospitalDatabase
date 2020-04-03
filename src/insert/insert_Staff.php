@@ -18,7 +18,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md">
-            Staff Id: <input type=text name="id" size=6><br><br>
+            Staff Id: <input type=text name="id" size=20><br><br>
             </div>
             <div class="col-md">
             Staff Name: <input type=text name="name" size=20><br><br>
@@ -27,7 +27,7 @@
             Staff Address: <input type=text name="address" size=20><br><br>
             </div>
             <div class="col-md">
-            Staff Dob: <input type=text name="dob" size=10><br><br>
+            Staff Dob: <input type=text name="dob" size=20><br><br>
             </div>
             <div class="col-md">
             Staff duty: <input type=text name="duty" size=20><br><br>
