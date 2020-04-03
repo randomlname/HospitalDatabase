@@ -8,12 +8,11 @@
 </head>
   <body>
     <div class="jumbotron text-center">
-    <h2> Display all staff assigned to a room  </h2>
+    <h2> All staff assigned to a room  </h2>
     </div>
-    <p style="color:green;"> Staff member List </p>
+    <p class="text-md-left" style="color:green;"> Staff member List </p>
 
     <div class="container-fluid">
-          <p class="text-left">
     <?php
     echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
     if(isset($_COOKIE["username"]))
@@ -44,7 +43,6 @@
       echo "<h3> You are not logged in! </h3><p> <a href=\"../index.php\">Login First</a></p>";
     }
      ?>
-   </p>
  </div>
 </body>
 </html>
