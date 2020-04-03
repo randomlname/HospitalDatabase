@@ -11,6 +11,9 @@
       Staff wage: <input type=float name="wage"><br><br>
       Staff hours: <input type=float name="hours"><br><br>
       <input type=submit name="Submit" value="Insert">
+      <?php
+      echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
+      ?>
     </form>
    </body>
 </html>
