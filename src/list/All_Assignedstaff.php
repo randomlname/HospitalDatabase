@@ -12,7 +12,7 @@
     </div>
     <p style="color:green;"> Staff member List </p>
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-md">
     <?php
