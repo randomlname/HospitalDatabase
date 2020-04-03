@@ -9,7 +9,7 @@ if (isset($_COOKIE["username"])) {
     echo "Connection Issue";
     exit;
   }
-
+  
   $name = "select id from PATIENT where id='$_POST[id]'";
   $result = $conn->query($name);
   if($result->num_rows != 0) {
