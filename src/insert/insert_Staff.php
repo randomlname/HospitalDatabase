@@ -14,16 +14,30 @@
     </div>
 
     <form action="insertStaff.php" method=post>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-md">
             Staff Id: <input type=text name="id" size=6><br><br>
+            </div>
+            <div class="col-md">
             Staff Name: <input type=text name="name" size=20><br><br>
+            </div>
+            <div class="col-md">
             Staff Address: <input type=text name="address" size=20><br><br>
+            </div>
+            <div class="col-md">
             Staff Dob: <input type=text name="dob" size=10><br><br>
+            </div>
+            <div class="col-md">
             Staff duty: <input type=text name="duty" size=20><br><br>
+            </div>
+            <div class="col-md">
             Staff wage: <input type=float name="wage"><br><br>
+            </div>
+            <div class="col-md">
             Staff hours: <input type=float name="hours"><br><br>
+            </div>
+            <div class="col-md">
             <input type=submit name="Submit" value="Insert">
           </div>
         </div>
