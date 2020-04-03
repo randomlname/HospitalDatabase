@@ -1,7 +1,19 @@
 <html>
-<head><title> Hospital Database ** Assign a staff to a room </title></head>
+<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title> Hospital Database ** Assign a staff to a room </title>
+  </head>
   <body>
+    <div class="jumbotron text-center">
     <h2> Assign a staff to a room </h2>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
     <?php
     if(isset($_COOKIE["username"])) {
 
@@ -50,6 +62,8 @@
     }
 
     ?>
-
+  </div>
+</div>
+</div>
   </body>
 </html>
