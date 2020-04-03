@@ -12,7 +12,7 @@
 
       $conn = new mysqli("vconroy.cs.uleth.ca",$username,$password,'group11');
 
-      $sql = "select * from PATIENT P, PERSON PR , ROOM R where P.id = PR.id";
+      $sql = "select * from PATIENT P, PERSON PR , ROOM R where P.id = PR.id and P.room_number = R.room_number";
       $result = $conn->query($sql);
       if ($result->num_rows != 0)
       {
