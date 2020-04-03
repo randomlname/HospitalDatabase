@@ -15,7 +15,7 @@
     </div>
 
     <form action="insertStaff.php" method=post>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md">
             Staff Id: <input type=text name="id" size=20><br><br>
