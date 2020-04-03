@@ -38,11 +38,9 @@
             <div class="col-md">
             Staff hours: <input type=float name="hours"><br><br>
             </div>
-            <div class="col-sm">
-            <input type=submit name="Submit" value="Insert">
           </div>
         </div>
-      </div>
+        <input type=submit name="Submit" value="Insert">
 
       <?php
       echo "<br>";
