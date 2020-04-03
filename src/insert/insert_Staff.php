@@ -15,7 +15,7 @@
     </div>
 
     <form action="insertStaff.php" method=post>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md">
             Staff Id: <input type=text name="id" size=6><br><br>
@@ -38,7 +38,9 @@
             <div class="col-md">
             Staff hours: <input type=float name="hours"><br><br>
             </div>
+            <div class="col-sm">
             <input type=submit name="Submit" value="Insert">
+          </div>
         </div>
       </div>
 
