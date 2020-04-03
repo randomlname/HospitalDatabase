@@ -12,9 +12,10 @@
     </div>
     <p style="color:green;"> Staff member List </p>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md">
+          <p class="text-left">
     <?php
     echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
     if(isset($_COOKIE["username"]))
@@ -45,6 +46,7 @@
       echo "<h3> You are not logged in! </h3><p> <a href=\"../index.php\">Login First</a></p>";
     }
      ?>
+   </p>
    </div>
  </div>
  </div>
