@@ -1,8 +1,15 @@
 <html>
-<head><title>University of Hospital</title></head>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<title>University of Hospital</title></head>
 <body>
 
-
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md">
 <?php
 if(isset($_COOKIE["username"])){
 
@@ -49,8 +56,8 @@ echo "<form action=\"updateStaff2.php\" method=post>";
 
 }
 ?>
-
-
-
+</div>
+</div>
+</div>
 </body>
 </html>

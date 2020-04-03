@@ -14,7 +14,7 @@
   </div>
       <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-7">
               <h3> Staff adjustments </h3>
               <ul>
                 <li><a href= "insert/insert_Staff.php"> Add a staff member</a></li>
@@ -35,7 +35,7 @@
                 <li><a href= "list/All_Patient.php"> Show all patient records</a></li>
               </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-8">
               <h3> Room and Section adjustments </h3>
               <ul>
                 <li><a href= "insert/insert_Section.php"> Add a section</a></li>
