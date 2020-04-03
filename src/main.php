@@ -12,7 +12,7 @@
   <div class="jumbotron text-center">
     <h1> Hospital Database Application </h1>
   </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
               <h3> Staff adjustments </h3>

@@ -10,9 +10,9 @@
     <div class="jumbotron text-center">
     <h2> Add a new staff member </h2>
     </div>
-    
+
     <form action="insertStaff.php" method=post>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-8">
       Staff Id: <input type=text name="id" size=6><br><br>
