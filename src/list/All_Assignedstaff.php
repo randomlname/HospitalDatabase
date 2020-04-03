@@ -13,8 +13,6 @@
     <p style="color:green;"> Staff member List </p>
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md">
           <p class="text-left">
     <?php
     echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
@@ -47,8 +45,6 @@
     }
      ?>
    </p>
-   </div>
  </div>
- </div>
-   </body>
+</body>
 </html>
