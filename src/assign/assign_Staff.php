@@ -12,7 +12,7 @@
 
       $conn = new mysqli("vconroy.cs.uleth.ca", $username, $password,'group11');
 
-      $sql = "select id from STAFF";
+      $sql = "select id from OVERSEES";
       $sql1 = "select room_number from ROOM";
 
       $result = $conn->query($sql);
