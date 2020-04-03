@@ -16,8 +16,7 @@ if (isset($_COOKIE["username"])) {
     echo "<h3> Assigned staff with id: $_POST[id] to room number $_POST[room_number] </h3>";
   } else {
     $err = $conn->errno;
-  }
-  if($err == 1062) {
+    if($err == 1062) {
       echo "<p> Staff member with id: $_POST[id] already assigend to room number $_POST[room_number] </p>";
     } else {
       echo "<p>MySQL error code $err </p>";
