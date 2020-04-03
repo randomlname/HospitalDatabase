@@ -17,6 +17,7 @@ if (isset($_COOKIE["username"])) {
     if($conn->query($sql)) {
       echo "<h3> patient deleted!</h3>";
       $sql = "delete from PERSON where id='$_POST[id]'";
+      $sql = "update ROOM set number_patients = number_patients - 1 where room_number = '$_POST[room_number]'";
       $conn->query($sql);
     } else {
       $err = $conn->errno;
