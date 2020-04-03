@@ -10,7 +10,7 @@
     <div class="jumbotron text-center">
     <h2> All staff assigned to a room  </h2>
     </div>
-    <p class="text-md-left" style="color:green;"> Staff member List </p>
+    <p class="text-md-left"> Staff member List </p>
 
     <div class="container-fluid">
     <?php
