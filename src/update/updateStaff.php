@@ -10,6 +10,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md">
+				
 <?php
 if(isset($_COOKIE["username"])){
 
@@ -26,7 +27,6 @@ echo "<form action=\"updateStaff2.php\" method=post>";
 	}
 
 	$sql = "select * from STAFF where id='$_POST[id]'";
-	echo "<h3><strong> staff with id:\"$sql[id]\"</h3>"
 	$result = $conn->query($sql);
 	if(!$result)
 	{
