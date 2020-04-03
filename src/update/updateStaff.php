@@ -26,7 +26,7 @@ echo "<form action=\"updateStaff2.php\" method=post>";
 	}
 
 	$sql = "select * from STAFF where id='$_POST[id]'";
-
+	echo "<h3><strong> staff with id:'$_POST[id]'</h3>"
 	$result = $conn->query($sql);
 	if(!$result)
 	{
