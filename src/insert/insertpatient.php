@@ -14,11 +14,12 @@ if (isset($_COOKIE["username"])) {
   if ($conn->query($sql))
   {
     $sql = "insert into PATIENT values ('$_POST[id]','$_POST[room_number]','$_POST[priority_level]','$_POST[reason]')";
-    $sql = "update ROOM set number_patients = number_patients + 1 where room_number = '$_POST[room_number]'";
+    if ($conn->query($sql)) {
+      $sql = "update ROOM set number_patients = number_patients + 1 where room_number = '$_POST[room_number]'";
     if ($conn->query($sql)) {
       echo "<h3> Patient Added! </h3>";
     }
-  } else {
+  } }else {
     $err = $conn->errno;
     if($err == 1062)
     {
