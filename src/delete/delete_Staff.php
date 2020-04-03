@@ -12,7 +12,10 @@
     <div class="jumbotron text-center">
     <h2> Delete a staff member record </h2>
     </div>
-    <div class="col-md">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md">
     <?php
     if(isset($_COOKIE["username"]))
     {
@@ -44,6 +47,8 @@
       echo "<h3> You are not logged in! </h3><p> <a href=\"../index.php\">Login First</a></p>";
     }
      ?>
-     </div>
-   </body>
+   </div>
+ </div>
+</div>
+</body>
 </html>
