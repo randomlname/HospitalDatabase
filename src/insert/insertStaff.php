@@ -10,6 +10,7 @@ if (isset($_COOKIE["username"])) {
     exit;
   }
 
+  $sql = "insert int OVERSEES values ('$_POST[id]')"
   $sql = "insert into PERSON values ('$_POST[id]','$_POST[name]','$_POST[address]','$_POST[dob]')";
   if ($conn->query($sql))
   {
