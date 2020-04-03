@@ -10,8 +10,11 @@
     <div class="jumbotron text-center">
     <h2> Add a new staff member </h2>
     </div>
+    
     <form action="insertStaff.php" method=post>
-      <div class="col-md-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
       Staff Id: <input type=text name="id" size=6><br><br>
       Staff Name: <input type=text name="name" size=20><br><br>
       Staff Address: <input type=text name="address" size=20><br><br>
@@ -21,6 +24,8 @@
       Staff hours: <input type=float name="hours"><br><br>
       <input type=submit name="Submit" value="Insert">
     </div>
+  </div>
+</div>
       <?php
       echo "<br>";
       echo "<strong><a href=\"../main.php\">Return</a></strong> to Home Page.";
