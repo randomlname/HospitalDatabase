@@ -14,10 +14,12 @@ if (isset($_COOKIE["username"])) {
   if ($conn->query($sql))
   {
     $sql = "insert into STAFF values ('$_POST[id]','$_POST[duty]','$_POST[wage]','$_POST[hours]')";
-    $sql = "insert into OVERSEES values ('$_POST[id]')";
     if ($conn->query($sql)) {
+      $sql = "insert into OVERSEES values ('$_POST[id]')";
+      if ($conn->query($sql)) {
       echo "<h3> Staff Added! </h3>";
     }
+  }
   } else {
     $err = $conn->errno;
     if($err == 1062)

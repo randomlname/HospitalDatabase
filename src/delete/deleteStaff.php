@@ -12,14 +12,18 @@ if (isset($_COOKIE["username"])) {
 
   $name = "select id from STAFF where id='$_POST[id]'";
   $result = $conn->query($name);
+
   if($result->num_rows != 0) {
     $sql = "delete from STAFF where id='$_POST[id]'";
-    $sql = "delete from OVERSEES where id='$_POST[id]'";
-    if($conn->query($sql)) {
-      echo "<h3> Staff member deleted!</h3>";
-      $sql = "delete from PERSON where id='$_POST[id]'";
+    if ($conn->query($sql)) {
+      $sql = "delete from OVERSEES where id='$_POST[id]'";
+      if($conn->query($sql)) {
+        $sql = "delete from PERSON where id='$_POST[id]'";
+        echo "<h3> Staff member deleted!</h3>";
       $conn->query($sql);
-    } else {
+    }
+  }
+} else {
       $err = $conn->errno;
       if ($err == 1451) {
         echo "<p> Cannot delete </p>";
