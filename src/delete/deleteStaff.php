@@ -14,9 +14,13 @@ if (isset($_COOKIE["username"])) {
   $result = $conn->query($name);
 
   if($result->num_rows != 0) {
-    $sql = "delete from STAFF where id='$_POST[id]'";
+
+    $sql = "delete from OVERSEES where id='$_POST[id]'";
+
     if ($conn->query($sql)) {
-      $sql = "delete from OVERSEES where id='$_POST[id]'";
+
+      $sql = "delete from STAFF where id='$_POST[id]'";
+
       if($conn->query($sql)) {
         $sql = "delete from PERSON where id='$_POST[id]'";
         echo "<h3> Staff member deleted!</h3>";
