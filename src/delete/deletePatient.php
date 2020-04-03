@@ -10,16 +10,17 @@ if (isset($_COOKIE["username"])) {
     exit;
   }
 
-  $name = "select id,room_number from PATIENT P where P.id='$_POST[id]'";
-
+  $name = "select id from PATIENT where id='$_POST[id]'";
   $result = $conn->query($name);
+
   if($result->num_rows != 0) {
+    $row = mysqli_fetch_array($result);
     $sql = "delete from PATIENT where id='$_POST[id]'";
     if($conn->query($sql)) {
       echo "<h3> patient deleted!</h3>";
       $sql = "delete from PERSON where id='$_POST[id]'";
       $conn->query($sql);
-      $sql = "update ROOM set number_patients = number_patients - 1 where room_number = '$result[room_number]'";
+      $sql = "update ROOM set number_patients = number_patients - 1 where room_number = '$row[$room_number]'";
       $conn->query($sql);
     } else {
       $err = $conn->errno;
