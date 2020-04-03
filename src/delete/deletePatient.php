@@ -16,13 +16,11 @@ if (isset($_COOKIE["username"])) {
   if($result->num_rows != 0) {
     $sql = "delete from PATIENT where id='$_POST[id]'";
     if($conn->query($sql)) {
-      echo "<h3> patient deleted!</h3>";
       $sql = "delete from PERSON where id='$_POST[id]'";
-      $conn->query($sql);
-      $sql = "update ROOM set number_patients = number_patients - 1 where room_number = '$name[room_number]'";
-      $conn->query($sql);
-
-
+      if($conn->query($sql)){
+        $sql = "update ROOM set number_patients = number_patients - 1 where room_number = '$result[room_number]'";
+        echo "<h3> patient deleted!</h3>";
+      }
     } else {
       $err = $conn->errno;
       if ($err == 1451) {
